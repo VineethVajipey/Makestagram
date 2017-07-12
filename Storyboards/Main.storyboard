@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="I1p-4D-K7N">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="AGv-vT-DQ6">
+            <objects>
+                <viewController id="sec-lO-6vJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JNi-QQ-CwQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZl-8C-KEM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GEh-2U-iNB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_plus_black" id="ag3-9r-9LN">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WqW-Fz-Mfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="-26"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hBC-SP-aYX">
+            <objects>
+                <viewController id="CGi-oW-ro9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YJ6-YR-grw"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUd-0J-wJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ppU-rP-pVy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_find_friends_black" id="Dpk-sn-QaT">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJa-pm-8tE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="662"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="od3-cc-V1b">
+            <objects>
+                <viewController id="qSk-qk-ced" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aBP-jH-BK3"/>
+                        <viewControllerLayoutGuide type="bottom" id="3nY-Aq-xRz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YTI-Nv-jER">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="KRR-gP-pnb">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afv-av-iCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="-714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BEY-PI-HDq">
+            <objects>
+                <tabBarController id="I1p-4D-K7N" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="O67-hv-7SI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qSk-qk-ced" kind="relationship" relationship="viewControllers" id="GnB-25-A0o"/>
+                        <segue destination="sec-lO-6vJ" kind="relationship" relationship="viewControllers" id="hb8-gw-GSP"/>
+                        <segue destination="CGi-oW-ro9" kind="relationship" relationship="viewControllers" id="mUe-LM-UFW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JfX-iJ-BOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_find_friends_black" width="25" height="25"/>
+        <image name="tab_home_black" width="25" height="25"/>
+        <image name="tab_plus_black" width="25" height="25"/>
+    </resources>
+</document>
