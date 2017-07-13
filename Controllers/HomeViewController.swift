@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  Makestagram
 //
-//  Created by Vineeth on 7/12/17.
+//  Created by Vineeth on 7/13/17.
 //  Copyright © 2017 Vineeth. All rights reserved.
 //
 
@@ -16,20 +16,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    @IBOutlet weak var tableView: UITableView!
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
