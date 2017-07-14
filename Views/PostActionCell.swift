@@ -16,7 +16,9 @@ class PostActionCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    @IBOutlet weak var timePosted: UILabel!
+
+   
+    @IBOutlet weak var timeAgoLabel: UILabel!
     @IBOutlet weak var numberofLikes: UILabel!
 
     override func setSelected(_ selected: Bool, animated: Bool) {

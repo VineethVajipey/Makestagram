@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Makestagram-->
         <scene sceneID="od3-cc-V1b">
             <objects>
                 <viewController id="qSk-qk-ced" customClass="HomeViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="numberofLikes" destination="CYL-ie-qer" id="xGB-K0-DQE"/>
-                                            <outlet property="timePosted" destination="e0K-Gr-Kep" id="nTg-eY-NGk"/>
+                                            <outlet property="timeAgoLabel" destination="e0K-Gr-Kep" id="Do0-jx-UVS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -159,7 +159,7 @@
                             <constraint firstItem="3nY-Aq-xRz" firstAttribute="top" secondItem="eZ7-Ts-dJb" secondAttribute="bottom" id="zdA-zO-48c"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MAE-Jp-R9k"/>
+                    <navigationItem key="navigationItem" title="Makestagram" id="MAE-Jp-R9k"/>
                     <connections>
                         <outlet property="tableView" destination="eZ7-Ts-dJb" id="IPH-Xf-nJn"/>
                     </connections>

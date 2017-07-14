@@ -34,6 +34,14 @@ class HomeViewController: UIViewController {
         // remove separators from cells
         tableView.separatorStyle = .none
     }
+    
+    let timestampFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        
+        return dateFormatter
+    }()
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -60,6 +68,7 @@ extension HomeViewController: UITableViewDataSource {
             
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
+            cell.timeAgoLabel.text = timestampFormatter.string(from: post.creationDate)
             
             return cell
             
