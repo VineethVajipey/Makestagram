@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol PostActionCellDelegate: class {
+    func didTapLikeButton(_ likeButton: UIButton, on cell: PostActionCell)
+}
+
 class PostActionCell: UITableViewCell {
 
+    weak var delegate: PostActionCellDelegate?
     static let height: CGFloat = 46
     
     override func awakeFromNib() {
@@ -18,8 +23,10 @@ class PostActionCell: UITableViewCell {
     }
 
    
+    @IBOutlet weak var likeCountLabel: UILabel!
     @IBOutlet weak var timeAgoLabel: UILabel!
-    @IBOutlet weak var numberofLikes: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -27,7 +34,7 @@ class PostActionCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func likeButtonPressed(_ sender: Any) {
+    @IBAction func likeButtonTapped(_ sender: UIButton) {
+        delegate?.didTapLikeButton(sender, on: self)
     }
-
 }
